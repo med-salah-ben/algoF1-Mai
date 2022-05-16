@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>text_analyze</title>
+</head>
+<body>
+    <h1>text_analyze</h1>
+    <script>
+        const str = "Hello F1 Go My Coders.";
+        // console.log(str.toUpperCase())
+        function lower(str){
+            var low = str.toLowerCase();
+            return `lower sentence is : ${low}`
+        }
+        console.log(lower(str));
+
+        // console.log(str.length)
+        function lengStr(str) {
+            var leng = str.length 
+            return `length of str is : ${leng}`
+        }
+        console.log(lengStr(str))
+
+        console.log(str.split(""))
+        function CountVow(str) {
+            var Chars = str.split("")
+            var vow =/[a,e,i,o,u,y]/g;
+
+            if(Chars = str.match(vow)){
+                var res = str.match(vow).length;
+                return `num of vow is : ${res}`
+            }else{
+                return "there is no vow in the sentence"
+            }
+            
+            
+        }
+        console.log(CountVow(str))
+</script>
+</body>
+</html>

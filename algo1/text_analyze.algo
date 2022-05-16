@@ -1,0 +1,23 @@
+ALGORITHM text_analyze
+VAR
+    c: CHAR := "";
+    nb_char : INTEGER := 0;
+    nb_word : INTEGER :=0;
+    nb_Vow : INTEGER := 0 ;
+
+BEGIN
+    WHILE (c <> ".") DO
+        read(c);
+        nb_char := nb_char + 1;
+        IF (c = " ") THEN
+            nb_word += 1
+        END_IF
+        IF (c = "a" OR c = "e" OR c="i" OR c="u" OR c="o" OR c="y" OR c="A" OR c="E" OR c="I" OR c="U" OR c="O" OR c="Y") THEN
+            nb_Vow := nb_Vow+1
+        END_IF
+    END_WHILE
+    Write("the length of sentence is" ,  nb_char);
+    Write("the number of word in the sentence is" , nb_word);
+    Write("the number of Vow in the sentence is" , nb_Vow);
+
+END

@@ -1,0 +1,14 @@
+ALGORITHM solution1
+VAR
+    tab1 , tab2 : ARRAY_OF_INTGER;
+    sum , i , j :INTEGER;
+BEGIN
+sum := 0 ;
+    FOR i FROM 0 TO tab1.length -1 STEP 1  DO
+        FOR j FROM 0 TO tab2.length -1 STEP 1  DO
+        END_FOR
+         IF (tab1[i]= tab2[j]) THEN 
+         sum = sum + tab1[i]
+         END_IF
+    END_FOR
+END
